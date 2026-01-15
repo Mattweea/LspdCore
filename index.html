@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manuali e Gerarchie</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css"
+    />
+    <style>
+      :root {
+        --theme-color: #1f4e79;
+      }
+      .sidebar-toggle {
+        background: #1f4e79;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script>
+      window.$docsify = {
+        name: "Manuali e Gerarchie",
+        repo: "",
+        loadSidebar: true,
+        subMaxLevel: 2,
+        auto2top: true,
+        markdown: {
+          renderer: {
+            code: function (code, lang) {
+              return this.origin.code.apply(this, arguments);
+            },
+          },
+        },
+        plugins: [
+          function (hook) {
+            hook.beforeEach(function (content) {
+              return content.replace(/^---[\s\S]*?---\r?\n/, "");
+            });
+          },
+        ],
+      };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
+  </body>
+</html>
