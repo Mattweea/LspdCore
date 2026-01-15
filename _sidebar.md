@@ -1,5 +1,3 @@
-- [👮MANUALI E GERARCHIE](README.md)
-
 ## 📖 FDO - MANUALE OPERATIVO
 
 - [0️⃣ Introduzione](fdo-manuale-operativo/introduzione.md)

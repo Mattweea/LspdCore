@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>👮MANUALI E GERARCHIE | Manuali e Gerarchie</title>
+    <title>Repository Guidelines | Manuali e Gerarchie</title>
     <link rel="stylesheet" href="site.css" />
     <script defer src="site.js"></script>
   </head>
@@ -19,7 +19,28 @@
   <div class="nav-section">FDO - MANUALE OPERATIVO</div><ul class="nav-list"><li><a href="fdo-manuale-operativo/introduzione.html">0️⃣ Introduzione</a></li><li><a href="fdo-manuale-operativo/gerarchia.html">1️⃣ Gerarchia</a></li><li><a href="fdo-manuale-operativo/divisioni-dipartimentali.html">2️⃣ Divisioni Dipartimentali</a></li><li><a href="fdo-manuale-operativo/equipaggiamenti-e-risorse.html">3️⃣ Equipaggiamenti e risorse</a></li><li><a href="fdo-manuale-operativo/codici-e-ten-code.html">4️⃣ Codici e Ten-Code</a></li><li><a href="fdo-manuale-operativo/uso-corretto-del-database-e-del-tablet.html">5️⃣ Uso corretto del Database e del Tablet</a></li><li><a href="fdo-manuale-operativo/procedure-operative-base.html">6️⃣ Procedure Operative Base</a></li><li><a href="fdo-manuale-operativo/corso-di-primo-soccorso.html">7️⃣ Corso di primo soccorso</a></li><li><a href="fdo-manuale-operativo/reparti-operativi/README.html">8️⃣ Reparti Operativi</a><ul class="nav-list"><li><a href="fdo-manuale-operativo/reparti-operativi/flight-unit.html">🚁 Flight Unit</a></li><li><a href="fdo-manuale-operativo/reparti-operativi/reparto-mary.html">🏍️ Reparto Mary</a></li><li><a href="fdo-manuale-operativo/reparti-operativi/reparto-swat.html">🚔 Reparto Swat</a></li><li><a href="https://docs.google.com/document/d/10mKLSG9dSyHxj_ga_VQ-42GPcX34h2vMPgpyMrjCIeU/edit?usp=drivesdk" target="_blank" rel="noopener">👮 Manuale Operativo Coordinatore</a></li></ul></li><li><a href="fdo-manuale-operativo/reparto-investigativo.html">9️⃣ Reparto Investigativo</a></li><li><a href="fdo-manuale-operativo/carriera-sanzioni-e-comportamento-generale.html">🔟 Carriera, sanzioni e comportamento generale</a></li><li><a href="fdo-manuale-operativo/utilizzo-della-bodycam.html">📹 Utilizzo della bodycam</a></li><li><a href="fdo-manuale-operativo/reminder.html">❗️ REMINDER</a></li></ul><div class="nav-section">Federal Investigation Bureau</div><ul class="nav-list"><li><a href="federal-investigation-bureau/informativa.html">❗Informativa</a></li><li><a href="federal-investigation-bureau/divisioni.html">2️⃣ Divisioni</a></li><li><a href="federal-investigation-bureau/certificazione.html">📁 Certificazione</a></li></ul><div class="nav-section">Utilizzo MDT</div><ul class="nav-list"><li><a href="utilizzo-mdt/entrata-in-servizio-uscita.html">⏰ Entrata in servizio/uscita</a></li><li><a href="utilizzo-mdt/utliizzo-radio-e-gps.html">📻 Utliizzo Radio e GPS</a></li><li><a href="utilizzo-mdt/incarcerare-una-persona.html">🚓 Incarcerare una persona</a></li></ul></aside>
       <main class="main">
         <div class="content">
-<h1>👮MANUALI E GERARCHIE</h1>
+<h1>Repository Guidelines</h1>
+<h2>Project Structure &amp; Module Organization</h2>
+<p>This repository is a GitBook-style documentation set. The landing page is <code>README.md</code>, and the table of contents lives in <code>SUMMARY.md</code>. Primary content lives under <code>fdo-manuale-operativo/</code>, <code>federal-investigation-bureau/</code>, and <code>utilizzo-mdt/</code>. Subsections for operational units are in <code>fdo-manuale-operativo/reparti-operativi/</code>. Images and cover assets are stored in <code>.gitbook/assets/</code> and referenced from YAML frontmatter blocks at the top of each page.</p>
+<h2>Build, Test, and Development Commands</h2>
+<p>No build, test, or dev scripts are defined in this repository. Use your editor’s Markdown preview for local review. When adding or moving pages, update <code>SUMMARY.md</code> so the GitBook navigation stays in sync (example entry: <code>* [4️⃣ Codici e Ten-Code](fdo-manuale-operativo/codici-e-ten-code.md)</code>).</p>
+<h2>Coding Style &amp; Naming Conventions</h2>
+<p>Pages are Markdown with YAML frontmatter (<code>---</code> block) that should remain at the top of the file. Headings frequently include numbered or emoji prefixes; follow the established pattern in the surrounding section. Filenames and directories use kebab-case Italian names (example: <code>fdo-manuale-operativo/procedure-operative-base.md</code>). Keep tone and terminology consistent with existing pages.</p>
+<h2>Testing Guidelines</h2>
+<p>There are no automated tests. Validate changes manually by:</p>
+<ul>
+<li>Checking that new files appear in <code>SUMMARY.md</code>.</li>
+<li>Verifying relative links and image paths resolve.</li>
+<li>Previewing pages to confirm headings and frontmatter render correctly.</li>
+</ul>
+<h2>Commit &amp; Pull Request Guidelines</h2>
+<p>The Git history is minimal; one commit uses a ticket-style prefix. Use short, descriptive commit messages, and include a ticket ID if your workflow requires it (example: <code>GITBOOK-24: Update gerarchia</code>). Pull requests should include a brief summary, a list of pages updated, and any external links added or changed.</p>
+<h2>Content Update Checklist</h2>
+<ul>
+<li>Add or edit Markdown pages in the appropriate section directory.</li>
+<li>Keep YAML frontmatter intact and update <code>SUMMARY.md</code> for navigation.</li>
+<li>Re-check affected pages in a Markdown preview before requesting review.</li>
+</ul>
         </div>
       </main>
     </div>
