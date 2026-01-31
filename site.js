@@ -1,8 +1,11 @@
 (function () {
-  var toggle = document.querySelector(".toggle");
-  if (toggle) {
-    toggle.addEventListener("click", function () {
-      document.body.classList.toggle("is-nav-open");
+  var toggles = document.querySelectorAll(".toggle");
+  if (toggles.length) {
+    toggles.forEach(function (toggle) {
+      toggle.addEventListener("click", function () {
+        document.body.classList.toggle("is-nav-open");
+        document.body.classList.toggle("is-nav-collapsed");
+      });
     });
   }
 
